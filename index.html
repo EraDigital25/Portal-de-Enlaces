@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Enlaces</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Pantalla de bienvenida -->
+    <h1 style="text-align: center; padding-top: 100px;">Portal de enlaces</h1>
+    <div class="welcome-screen" id="welcomeScreen" style="display: flex;">
+        <div class="login-container">
+            <input 
+                type="password" 
+                id="passwordInput" 
+                class="password-input" 
+                placeholder="Ingrese contraseña"
+            >
+            <button 
+                class="btn btn-primary" 
+                id="enterButton"
+            >
+                Entrar
+            </button>
+            <button 
+                class="btn btn-secondary" 
+                id="togglePasswordButton"
+            >
+                Comprar Contraseña
+            </button>
+        </div>
+    </div>
+
+    <!-- Pantalla principal -->
+    <div class="main-content" id="mainContent" style="display: none;">
+        <input type="text" class="search-bar" placeholder="Buscar enlaces..." id="searchBar">
+        
+        <div class="categories">
+            <button class="category-btn active" data-category="todos">Todos</button>
+            <button class="category-btn" data-category="libros">Libros</button>
+            <button class="category-btn" data-category="cursos">Cursos</button>
+            <button class="category-btn" data-category="entretenimiento">Entretenimiento</button>
+        </div>
+
+        <div class="links-container" id="linksContainer"></div>
+    </div>
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>
