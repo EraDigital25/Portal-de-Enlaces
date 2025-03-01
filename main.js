@@ -28,13 +28,6 @@ function handleEnter() {
         alert('Contraseña incorrecta');
     }
 }
-// Funcion de redirigir a pagina web
-// Obtén el botón "redireccionar" por su ID
-document.getElementById("togglePasswordButton").addEventListener("click", function() {
-    // Redirigir a la URL deseada
-    window.location.href = "https://www.the-odin.com/"; // Reemplaza con la URL a la que deseas redirigir
-});
-
 
 // Función para mostrar los enlaces en pantalla
 function displayLinks(linksToDisplay) {
